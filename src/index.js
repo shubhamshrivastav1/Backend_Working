@@ -2,6 +2,7 @@ import dns from "dns";
 import dotenv from "dotenv";
 import connectDB from "./db/index.js";
 import { error } from "console";
+import { app } from "./app.js";
 
 // require('dotenv').config({path: './env'})
 // import dotenv from "dotenv";
@@ -9,7 +10,6 @@ import { error } from "console";
 
 // import mongoose from "mongoose";
 // import { DB_NAME } from "./constants";
-
 
 
 dns.setServers(["8.8.8.8", "8.8.4.4"]);
